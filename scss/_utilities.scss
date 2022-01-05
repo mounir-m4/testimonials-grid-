@@ -1,0 +1,70 @@
+.container {
+	max-width: $container-width;
+	padding: 0 1.5rem;
+	margin: auto;
+	overflow: hidden;
+}
+%shared-style {
+	border-radius: 8px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.bg-violet {
+	@extend %shared-style;
+	background: url('../images/bg-pattern-quotation.svg'), $poderate-violet;
+	background-position: right 15% top 10%;
+	background-repeat: no-repeat;
+	background-size: 25%;
+	color: $white;
+}
+.bg-dark {
+	background: $dark-blackish-blue;
+	color: $white;
+	@extend %shared-style;
+}
+.bg-secondary {
+	background: $dark-grayish-blue;
+	color: $white;
+	@extend %shared-style;
+}
+.bg-light {
+	background: $white;
+	color: $dark-blackish-blue;
+	@extend %shared-style;
+}
+//paragraphs
+.lead {
+	font-size: 1rem;
+	color: $dark-blackish-blue;
+	font-weight: normal;
+	letter-spacing: 0.6px;
+	opacity: 0.8;
+	&-light {
+		color: #fff;
+		opacity: 0.8;
+	}
+}
+// headings
+.h {
+	font-size: 1.2rem;
+	margin: 0.5rem auto;
+	&2 {
+		color: $dark-blackish-blue;
+		opacity: 0.8;
+	}
+	&2-light {
+		color: $white;
+	}
+}
+
+//padding
+.p {
+	&-1 {
+		padding: 1rem;
+	}
+	&-2 {
+		padding: 2rem;
+	}
+	&-3 {
+		padding: 3rem;
+	}
+}

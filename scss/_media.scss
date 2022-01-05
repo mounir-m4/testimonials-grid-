@@ -1,0 +1,43 @@
+// smartphones
+@media (max-width:500px){
+  .d-grid{
+    gap: 1.5rem;
+    padding: 1rem 0;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'article-one'
+    'article-two'
+    'article-three'
+    'article-four'
+    'article-five'
+    ;
+  }
+  .article{
+    &-one,&-two,
+    &-three,&-four,&-five{
+      margin: auto 2rem;
+    }
+  }
+  
+}
+
+@media (max-height: 580px){
+.d-grid{
+    gap: 1.5rem;
+    padding: 1rem 0;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'article-one'
+    'article-two'
+    'article-three'
+    'article-four'
+    'article-five'
+    ;
+  }
+  .article{
+    &-one,&-two,
+    &-three,&-four,&-five
+    {
+      margin: auto 2.5rem;
+    }
+  }
+  
+}
